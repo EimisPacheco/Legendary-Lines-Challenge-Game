@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+    /* Set the background image */
+    background-image: url(../assets/bg.jpg);
+    /* Set the background size */
+    background-size: cover; /* or contain, or a specific width and height */
+  
+    /* Set the background repeat */
+    background-repeat: no-repeat; /* or repeat-x, repeat-y, or repeat */
+  
+    /* Set the background position */
+    background-position: center; /* or a specific position like top left, bottom right */
+  }
+  .App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+    /* Buttons */
+  .next-btn {
+      background-color: #4a90e2;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+ }
+    
+  .next-btn:hover {
+      background-color: #357ab8;
+      transform: scale(1.1);
+ }
+    

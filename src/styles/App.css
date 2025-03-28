@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #FF9F1C;
+    font-family: Arial, sans-serif;
+}
+
+#root {
+    min-height: 100vh;
+    background-image: url(../assets/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    position: relative;
+    background: transparent;
+}
+
+.app-title {
+    color: var(--theme-color, #FF9F1C);
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 0 0 15px var(--theme-glow, rgba(255, 159, 28, 0.3));
+    position: relative;
+    z-index: 2;
+}
+
+.app-content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.carousel-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.game-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Remove the background image reference and fix responsive design */
+@media (max-width: 768px) {
+    .app-title {
+        font-size: 2rem;
+        margin: 10px 0;
+    }
+
+    .app-content {
+        padding: 10px;
+        gap: 20px;
+    }
+}

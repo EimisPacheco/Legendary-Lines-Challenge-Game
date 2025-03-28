@@ -1,0 +1,277 @@
+/* Base container */
+.game-container {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  padding: 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Game setup container */
+.game-setup {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* Remove any top margins from the first element */
+.game-setup > *:first-child {
+  margin-top: 0;
+}
+
+/* Title */
+.game-title {
+  color: #FF9F1C;
+  font-size: 2.5rem;
+  text-align: center;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Difficulty section */
+.difficulty-selector {
+  margin: 2rem 0;
+}
+
+.difficulty-selector h3 {
+  color: #FF9F1C;
+  margin-bottom: 1rem;
+}
+
+.difficulty-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.difficulty-btn {
+  background: rgba(255, 159, 28, 0.1);
+  border: 2px solid #FF9F1C;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  color: #FF9F1C;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 159, 28, 0.3);
+}
+
+.difficulty-btn:hover {
+  background: rgba(255, 159, 28, 0.2);
+  box-shadow: 0 0 15px #FF9F1C;
+  transform: scale(1.05);
+}
+
+.difficulty-btn.selected {
+  background: rgba(255, 159, 28, 0.3);
+  box-shadow: 0 0 20px #FF9F1C;
+}
+
+/* Rounds selector */
+.rounds-selector {
+  margin: 2rem 0;
+  color: #FF9F1C;
+}
+
+.rounds-selector h3 {
+  margin-bottom: 1rem;
+}
+
+.rounds-input {
+  background: rgba(255, 159, 28, 0.1);
+  border: 2px solid #FF9F1C;
+  color: #FF9F1C;
+  padding: 0.8rem;
+  width: 80px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  box-shadow: 0 0 10px rgba(255, 159, 28, 0.3);
+}
+
+.rounds-input:focus {
+  outline: none;
+  box-shadow: 0 0 15px #FF9F1C;
+}
+
+/* Start button */
+.start-btn {
+  background: #FF9F1C;
+  color: white;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 2rem 0;
+  min-width: 200px;
+  box-shadow: 0 0 15px rgba(255, 159, 28, 0.5);
+}
+
+.start-btn:hover {
+  background: #e88c0c;
+  box-shadow: 0 0 20px #FF9F1C;
+  transform: scale(1.05);
+}
+
+/* Game stats */
+.game-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: #FF9F1C;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Make sure all text is visible */
+h1, h2, h3, p {
+  color: #FF9F1C;
+  margin: 0.5rem 0;
+}
+
+/* Add these styles to your existing Game.css */
+
+.game-header {
+  display: flex;
+  justify-content: space-around;
+  color: #FF9F1C;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  text-shadow: 0 0 10px rgba(255, 159, 28, 0.3);
+}
+
+.category-selector {
+  margin: 2rem 0;
+}
+
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.category-btn {
+  background: rgba(255, 159, 28, 0.1);
+  border: 2px solid #FF9F1C;
+  border-radius: 8px;
+  padding: 1rem;
+  color: #FF9F1C;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(255, 159, 28, 0.3);
+}
+
+.category-btn.selected {
+  background: rgba(255, 159, 28, 0.3);
+  box-shadow: 0 0 20px #FF9F1C;
+}
+
+.points {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.year-guess {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.year-input {
+  background: rgba(255, 159, 28, 0.1);
+  border: 2px solid #FF9F1C;
+  color: #FF9F1C;
+  padding: 0.5rem;
+  width: 100px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.submit-btn {
+  background: #FF9F1C;
+  color: white;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 2rem auto;
+  display: block;
+}
+
+.submit-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.result-message {
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.result-message.correct {
+  background: rgba(0, 255, 0, 0.2);
+  color: #00ff00;
+}
+
+.result-message.wrong {
+  background: rgba(255, 0, 0, 0.2);
+  color: #ff0000;
+}
+
+.presentation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.nickname-input {
+  margin-top: 20px; /* Space between card and input */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the input and button */
+}
+
+.nickname-input input {
+  padding: 10px;
+  border: 2px solid #FF9F1C;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.nickname-input button {
+  background-color: #FF9F1C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nickname-input button:hover {
+  background-color: #FFB347;
+}

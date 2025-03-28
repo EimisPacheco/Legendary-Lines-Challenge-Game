@@ -1,0 +1,44 @@
+.input-modal {
+  position: fixed;
+  top: 1000px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(13, 25, 35, 0.95);
+  border: 2px solid var(--theme-color, #FF9F1C);
+  border-radius: 15px;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 30px var(--theme-glow, rgba(255, 159, 28, 0.3));
+  z-index: 1000;
+}
+
+.input-modal form {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-modal input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 2px solid var(--theme-color, #FF9F1C);
+  background: var(--theme-hover, rgba(255, 159, 28, 0.1));
+  border-radius: 8px;
+  color: var(--theme-color, #FF9F1C);
+  font-size: 1rem;
+}
+
+.input-modal button {
+  padding: 0.8rem 1.5rem;
+  background: var(--theme-hover, rgba(255, 159, 28, 0.2));
+  border: 2px solid var(--theme-color, #FF9F1C);
+  border-radius: 8px;
+  color: var(--theme-color, #FF9F1C);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.input-modal button:hover {
+  background: var(--theme-hover, rgba(255, 159, 28, 0.3));
+  transform: scale(1.05);
+} 

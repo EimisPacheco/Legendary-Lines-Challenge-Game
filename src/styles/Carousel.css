@@ -1,0 +1,10 @@
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.carousel-image {
+  transition: all 0.5s ease-in-out;
+}

@@ -1,0 +1,69 @@
+.game-rules-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 400px;
+  z-index: 1000;
+}
+
+.hide-rules-button {
+  background-color: var(--theme-color, #FF9F1C);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 10px;
+  float: right;
+}
+
+.rules-content {
+  clear: both;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  border: 2px solid var(--theme-color, #FF9F1C);
+  border-radius: 10px;
+  padding: 20px;
+  color: var(--theme-color, #FF9F1C);
+  overflow-y: auto;
+  max-height: calc(100vh - 100px);
+}
+
+.rules-content h2 {
+  color: var(--theme-color, #FF9F1C);
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.rules-content h3 {
+  color: var(--theme-color, #FF9F1C);
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.rules-content p,
+.rules-content li {
+  color: var(--theme-color, #FF9F1C);
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.rules-content ol,
+.rules-content ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+} 

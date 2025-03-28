@@ -1,0 +1,62 @@
+{
+  "name": "artcards",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@cloudinary/react": "1.9.0",
+    "@cloudinary/url-gen": "1.8.7",
+    "axios": "^1.7.9",
+    "canvas-confetti": "^1.9.3",
+    "framer-motion": "^12.7.3",
+    "openai": "^4.78.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "react-spring-3d-carousel": "1.2.0",
+    "react-tsparticles": "^2.12.2",
+    "styled-components": "^6.1.14",
+    "tsparticles": "^2.12.0",
+    "tsparticles-confetti": "^2.12.0",
+    "tsparticles-slim": "^2.12.0",
+    "use-sound": "^4.0.3",
+    "uuid": "3.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "post-update": "yarn upgrade"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-private-property-in-object"
+    ]
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "types": [
+      "@types/react",
+      "@types/react-dom"
+    ]
+  }
+}
