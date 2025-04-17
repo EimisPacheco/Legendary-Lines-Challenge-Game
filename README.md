@@ -3,6 +3,15 @@ I’ve always loved trivia games that challenge your memory and knowledge of fam
 
 See video: https://vimeo.com/1070418341
 
+
+![Legendary-Main-Page](https://github.com/user-attachments/assets/a6ef4111-8a8b-448d-bdcb-10b443ee374a)
+
+![Legendary1](https://github.com/user-attachments/assets/be97d2f7-482c-4a97-8878-249d09ca526f)
+
+![Legendary2](https://github.com/user-attachments/assets/978a545c-1a20-427e-a264-0bb79eb62b7f)
+
+
+
 ## What it does  
 **Legendary Lines Game** is an AI-powered trivia game where players try to guess the source of iconic phrases. Bonus points are awarded for guessing the **year** the quote was said, and even more for guessing the **director (for movies), artist/band (for songs), or author (for books)**. But be careful—wrong answers mean losing points!
 
